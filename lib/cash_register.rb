@@ -9,4 +9,7 @@ attr_accessor :total
   def add_item
   end
   
+  def apply_discount
+  end
+  
 end
