@@ -36,5 +36,6 @@ attr_accessor :total, :discount, :price, :items, :void_last_transaction
       @total -= @price
     else
       @total = 0
+    end
   end
 end
