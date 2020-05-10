@@ -19,7 +19,8 @@ attr_accessor :total, :discount, :price, :items
   end
   
   def apply_discount(discount = 20)
-    @total = total * Percentage(discount)
+    @discount = discount
+    @total = (1-@discount)percent_of(@total)
   end
   
   def items
