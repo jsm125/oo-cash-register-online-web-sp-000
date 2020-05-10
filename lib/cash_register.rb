@@ -12,4 +12,9 @@ attr_accessor :total
   def apply_discount
   end
   
+  def items
+  end
+  
+  def void_last_items
+  end
 end
