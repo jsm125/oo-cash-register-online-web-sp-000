@@ -21,7 +21,9 @@ attr_accessor :total, :discount, :price, :items
   def apply_discount
     if @discount > 0
       @total = (@total * (1-number_to_percentage(@discount)))
-    end
+      return "The new price is $#{total}"
+    else
+      return "There is no discount to apply."
   end
   
   def items
