@@ -4,7 +4,7 @@ attr_accessor :total, :cash_register, :cash_register_with_discount
   
   def initialize (total = 0)
     @total = total
-    @total = @total * .2
+    @total = @total * 20%
   end
   
   def add_item
