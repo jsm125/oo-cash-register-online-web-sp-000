@@ -20,7 +20,7 @@ attr_accessor :total, :discount, :price, :items
   
   def apply_discount
     if @discount > 0
-      @total = (@total * (1-number_to_percentage(@discount)))
+      @total -= @total * discount / 100
       return "The new total is $#{@total}."
     else
       return "There is no discount to apply."
