@@ -24,6 +24,7 @@ attr_accessor :total, :discount, :price, :items
       return "The new price is $#{total}"
     else
       return "There is no discount to apply."
+    end
   end
   
   def items
