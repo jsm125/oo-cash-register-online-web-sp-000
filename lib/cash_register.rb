@@ -20,7 +20,7 @@ attr_accessor :total, :discount, :price, :items
   
   def apply_discount(discount = 20)
     @discount = discount
-    @total = @total*(1-@discount)
+    @total = @total * (1-@discount)
   end
   
   def items
