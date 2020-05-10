@@ -18,7 +18,8 @@ attr_accessor :total, :discount, :price, :items
     end
   end
   
-  def apply_discount
+  def apply_discount(discount = 20)
+    
   end
   
   def items
