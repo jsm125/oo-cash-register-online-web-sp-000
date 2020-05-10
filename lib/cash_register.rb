@@ -6,11 +6,16 @@ attr_accessor :total, :discount, :price, :items
     @total = 0
     @discount = discount
     @items = []
-    @price = price
   end
   
   def add_item(item, price, quantity = 1)
-    
+    @price = price
+    @total += price * quantity
+    counter = 0 
+    while counter < quantity
+      @items << item
+      counter += 1 
+    end
   end
   
   def apply_discount
