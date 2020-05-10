@@ -6,6 +6,7 @@ attr_accessor :total
     @total = total
   end
   
-  
+  def add_item
+  end
   
 end
