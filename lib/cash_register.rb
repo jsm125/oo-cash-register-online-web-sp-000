@@ -36,6 +36,7 @@ attr_accessor :total, :discount, :price, :items, :last_transaction
     self.total -= self.price
     if items = []
       self.total = 0.0
+    end
   end
   
 
