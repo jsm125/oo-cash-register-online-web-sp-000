@@ -22,7 +22,7 @@ attr_accessor :total, :discount, :price, :items, :last_transaction
   
   def apply_discount
     if self.discount > 0
-      self.total -= (self.total * self.discount) / 100.to_f
+      self.total -= (self.total * self.discount) / 100
       return "After the discount, the total comes to $#{self.total}."
     else
       return "There is no discount to apply."
