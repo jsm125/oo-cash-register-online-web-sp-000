@@ -33,7 +33,7 @@ attr_accessor :total, :discount, :price, :items, :last_transaction
   end
   
   def void_last_transaction
-    if items[0] = ""
+    if items[0] = nil
       self.total = 0.0
     else
       self.total -= self.price
