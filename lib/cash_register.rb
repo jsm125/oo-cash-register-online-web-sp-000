@@ -37,3 +37,4 @@ attr_accessor :total, :discount, :price, :items, :last_transaction
   end
   print last_transaction
 end
+end
