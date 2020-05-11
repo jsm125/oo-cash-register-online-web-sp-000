@@ -14,7 +14,7 @@ attr_accessor :total, :discount, :price, :items, :last_transaction
     self.total += price * quantity
     counter = 0 
     while counter < quantity
-      @items << item
+      self.items << item
       counter += 1 
     end
     @last_transaction = @total
