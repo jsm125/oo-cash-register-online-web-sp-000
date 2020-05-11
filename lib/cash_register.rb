@@ -32,6 +32,10 @@ attr_accessor :total, :discount, :price, :items, :void_last_transaction
   end
   
   def void_last_transaction
+    @items.pop
     @total -= @price
+    if @items = []
+      return 0.0 
+    end
   end
 end
