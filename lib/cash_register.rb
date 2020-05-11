@@ -33,8 +33,7 @@ attr_accessor :total, :discount, :price, :items, :void_last_transaction
   
   def void_last_transaction
       @total -= @price
-    if items = []
-      @total = 0.0
+ 
     end
   end
 end
